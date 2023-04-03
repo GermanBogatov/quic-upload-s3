@@ -2,6 +2,7 @@ package application
 
 import (
 	"context"
+	"fmt"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/pkg/errors"
 	"github.com/quic-go/quic-go"
@@ -37,6 +38,7 @@ type S3Storage struct {
 func NewApplication(_ context.Context, configFile string, logger *logging.Logger) (app *Application, err error) {
 	logger.Infof("init config...")
 	cfg, err := config.NewConfig(configFile)
+	fmt.Println(cfg)
 	if err != nil {
 		return nil, errors.Wrap(err, "fail to initialize config")
 	}
