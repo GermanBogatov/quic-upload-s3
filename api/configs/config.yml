@@ -1,0 +1,15 @@
+s3:
+  host: "hb.bizmrg.com/"
+  region: "ru"
+  access_key: "j64Ka4X4TRbaZTCqhJNKRG"
+  secret_key: "7bvFTSmEtzMHmT8CEZovegve9MEEPwAjgUFM9SVcpNhF"
+  bucket: "test-back2-file-uploader"
+server:
+  port: 8000
+  shutdown_timeout: 2
+  size_upload: 1073741824
+  api_key: "7a7908be-e629-42bd-b6cc-51769a34d179"
+  delete_key: "uniqueDelete"
+health:
+  check_interval: 10
+cdn: "https://test-back2-file-uploader.hb.bizmrg.com/"
